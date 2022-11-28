@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+html{
+    overflow-x: hidden;
+  
+}
+
+
+:root{
+    --primary: #FDFDFD;
+    --secondary:#000;
+    --main:#56F03D;
+    --box-bg:#F5F5F5;
+    --box-text-color:#2A2A2A;
+    --footer-color:#A0A0A0;
+    --insta:#F53B95;
+    --twitter:#2675FF;
+    --discord:#A026FF;
+    
+}
+*{
+    scroll-padding-top:65px ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+   
+   
+
+}
+
+.padding{
+    padding: 0 100px;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary);
+    align-items: center;
+    padding: 20px 100px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+    z-index: 999;
+   color: var(--primary);
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+
+    
+}
+nav .logo{
+    color: var(--secondary);
+    font-size: 26px;
+    font-weight: 700;
+}
+nav span{
+    font-size: 40px;
+    color: var(--main);
+}
+nav ul li{
+  display: inline-block;
+  margin: 0 20px;
+  
+}
+
+nav ul li a{
+    color: var(--secondary);
+
+    
+   
+}
+nav ul li a:hover{
+    color: var(--main);
+    transition: 0.5s ease;
+}
+.hamburger-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger-menu > div{
+   
+    height: 3px;
+    width: 30px;
+    margin-bottom: 5px;
+    background-color: var(--secondary);
+
+}
+.hamburger-menu:hover div {
+
+
+  background-color: #56F03D;
+    
+}
+
+
+.home{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--primary);
+}
+
+
+
+
+.home h3{
+    font-size: 42px;
+}
+
+.home p{
+    font-size: 26px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.home a{
+    
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+    border: 3px solid var(--main);
+    color: var(--primary);
+    padding: 10px 15px;
+  border-radius: 3px;
+  
+}
+
+.home a:hover{
+    background-color: var(--main);
+    transition: 0.5s ease;
+}
+
+
+.heading{
+   text-align: center;
+}
+
+.heading h3{
+    text-transform: uppercase;
+    margin: 60px 0;
+    display: inline-block;
+
+    background-color: var(--main);
+    color: var(--primary);
+    padding: 15px 25px;
+    border-radius: 3px;
+}
+
+.orders-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+   
+}
+.orders-grid .box{
+    
+    padding: 20px;
+    background-color: var(--box-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+}
+
+.orders-grid .box img{
+   
+   display: flex;
+    height: 200px;
+    width: 200px;
+}
+
+.orders-grid .box .icon{
+    display: inline-block;
+   
+    color: var(--box-text-color);
+    margin: 10px 0 0 0;
+}
+
+.orders-grid .box h3{
+    color: var(--box-text-color);
+    margin: 10px 0 ;
+}
+
+
+.orders-grid .box a{
+
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--box-text-color);
+    border: 2px var(--main) solid;
+    border-radius: 5px;
+    
+}
+
+
+.orders-grid .box a:hover{
+    transition: 0.5s ease;
+    background-color:var(--main);
+    color: var(--primary);
+}
+.review .container{
+   display: flex;
+   
+    align-items: center;
+}
+.review .box{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: var(--box-bg);
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    width: 500px;
+    color: var(--box-text-color);
+}
+.review .images img{
+    width: 200px;
+    height: 200px;
+  border-radius: 100px;
+    
+}
+
+.review .author{
+    font-size: 30px;
+    font-weight: 800;
+}
+.review .job{
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.review .text{
+    font-size: 14px;
+    color: var(--box-text-color);
+   
+}
+
+.review p{
+    color: var(--box-text-color);
+    font-size: 14px;
+}
+
+
+
+
+.review .icon{
+    font-size: 40px;
+    cursor: pointer;
+    margin: 0 150px;
+}
+
+.review .icon:hover{
+    color: var(--main);
+}
+
+footer{
+    margin-top: 40px;
+   border-top: 1px solid var(--footer-color);
+    
+    text-align: center;
+    padding: 30px;
+}
+footer .icon{
+    margin: 0 5px;
+    transition: 0.5s ease;
+    cursor: pointer;
+
+}
+
+footer a .insta:hover{
+    color: var(--insta);
+}
+footer a .twitter:hover{
+    color: var(--twitter);
+}
+
+footer a  .discord:hover{
+    color: var(--discord);
+}
+
+
+
+footer .icon,p{
+    color: var(--footer-color);
+    font-size: 13px;
+
+}
+
+@media screen and (max-width:768px) {
+    .padding{
+        padding: 0 40px;
+    }
+    .hamburger-menu{
+        display: block;
+        position: relative;
+       
+    }
+    .hamburger-menu div{
+        transition: 0.5s ease;
+    }
+
+    .hamburger-menu.active div:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger-menu.active div:nth-child(1){
+        transform:translateY(8px) rotate(45deg);
+    }
+    .hamburger-menu.active div:nth-child(3){
+        
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    nav{
+        padding: 20px 40px;
+    }
+    nav ul{
+        display: flex;
+   
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        background-color: var(--primary);
+       top: 0;
+       left: 100%;
+
+    }
+    
+    nav ul.active{
+        left: 0;
+    }
+
+    .home h3{
+        font-size: 36px;
+    }
+    
+    .home p{
+        font-size: 25px;
+        font-weight: 600;
+        margin: 5px 0;
+    }
+
+    .orders-grid{
+        display: grid;
+        grid-template-columns: 1fr ;
+      
+       
+    }
+    .orders-grid .box img{
+   
+        display: flex;
+         height: 150px;
+         width: 150px;
+     }
+
+    .review .images img{
+        width: 150px;
+        height: 150px;
+      border-radius: 100px;
+        
+    }
+    .review .box{
+      
+       
+        padding: 20px;
+        text-align: center;
+        margin: 0 auto;
+        width: 350px;
+        
+    }
+    .review .icon{
+        font-size: 20px;
+        cursor: pointer;
+        margin: 0 20px;
+    }
+}
