@@ -17,7 +17,7 @@
 
         <ul>
            <li><a href="#home" onclick="togglemenu()">Home</a></li>
-            <li><a href="#order" onclick="togglemenu()">Order</a></li>
+            <li><a href="#orders" onclick="togglemenu() ">Order</a></li>
             <li><a href="#review" onclick="togglemenu()">Reviews</a></li>
         </ul>
 
@@ -26,6 +26,7 @@
             <div></div>
             <div></div>
         </div>
+        <i class="fa-solid fa-cart-shopping cart"></i>
     </nav>
 
 
@@ -39,90 +40,102 @@
         </div>
     </section>
 
-    <section class="order padding" id="order">
+    <section class="buy-page" id="buy-page">
+        <i class="fa-solid fa-xmark exit"></i>
+   <div class="container">
+    
+       
+
+        </div>
+        <h3 class="total">Total = $0</h3>
+        <button class="buy">Buy Now</button>
+
+    </section>
+
+    <section class="orders padding" id="orders">
         <div class="heading">
             <h3>Order</h3>
         </div>
         <div class="orders-grid">
             <div class="box">
-                <img src="burger.png" alt="">
+                <img src="burger.png" alt="" class="product-image">
+
+                <div class="rating">
+                    <i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i>
+                    </div>
+                    <div class="price">$43</div>
+    
+    
+                <h3 class="name">Burger</h3>
+
+                <button class="order">Order</button>
+
+            </div>
+            <div class="box">
+                <img src="tacos.png" alt="" class="product-image">
 
                 <div class="rating">
                     <i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i>
                     </div>
     
-    
-                <h3>Burger</h3>
-
-                <a href="">Order</a>
-
-            </div>
-            <div class="box">
-                <img src="tacos.png" alt="">
-
-                <div class="rating">
-                    <i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i>
-                    </div>
-    
-    
+                    <div class="price">$45</div>
 
 
-                <h3>Tacos</h3>
+                <h3 class="name">Tacos</h3>
 
-                <a href="">Order</a>
+                <button class="order">Order</button>
 
             </div>
             <div class="box">
-                <img src="hotdog.png" alt="">
+                <img src="hotdog.png" alt="" class="product-image">
+
+               <div class="rating">
+                <i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i>
+                </div>
+                <div class="price">$21</div>
+
+                <h3 class="name">Hotdog</h3>
+                <button class="order">Order</button>
+
+            </div>
+
+            <div class="box">
+                <img src="pepperoni pizza.png" alt="" class="product-image">
+
+               <div class="rating">
+                <i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i>
+                </div>
+                <div class="price">$80</div>
+
+                <h3 class="name">Pepperoni Pizza</h3>
+
+                <button class="order">Order</button>
+
+            </div>
+            <div class="box">
+                <img src="waffles.png" alt="" class="product-image">
 
                <div class="rating">
                 <i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i>
                 </div>
 
+                <div class="price">$34</div>
+                <h3 class="name">Waffles</h3>
 
-                <h3>Hotdog</h3>
-
-                <a href="">Order</a>
+                <button class="order">Order</button>
 
             </div>
-
             <div class="box">
-                <img src="pepperoni pizza.png" alt="">
+                <img src="noodles.png" alt="" class="product-image">
 
                <div class="rating">
                 <i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i>
                 </div>
 
+                <div class="price">$53</div>
+                <h3 class="name">Noodles</h3>
+                <button class="order">Order</button>
 
-                <h3>Pepperoni Pizza</h3>
-
-                <a href="">Order</a>
-
-            </div>
-            <div class="box">
-                <img src="waffles.png" alt="">
-
-               <div class="rating">
-                <i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i>
-                </div>
-
-
-                <h3>Waffles</h3>
-
-                <a href="">Order</a>
-
-            </div>
-            <div class="box">
-                <img src="noodles.png" alt="">
-
-               <div class="rating">
-                <i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i><i class="fa-solid fa-star icon"></i>
-                </div>
-
-
-                <h3>Noodles</h3>
-
-                <a href="">Order</a>
 
             </div>
         </div>
@@ -151,7 +164,7 @@
                 <div class="author">
                     Emily
                 </div>
-                <div class="job">UI/UX Designer</div>
+                <div class="job">Architect</div>
             
             <div class="text">
                 <p>

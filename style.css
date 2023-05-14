@@ -44,14 +44,14 @@ nav{
     align-items: center;
     padding: 20px 100px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    position: relative;
+ 
     z-index: 999;
    color: var(--primary);
    position: fixed;
+   width: 100%;
    top: 0;
    left: 0;
-   width: 100%;
-
+   
     
 }
 nav .logo{
@@ -84,7 +84,7 @@ nav ul li a:hover{
     cursor: pointer;
 }
 
-.hamburger-menu > div{
+.hamburger-menu  div{
    
     height: 3px;
     width: 30px;
@@ -92,19 +92,15 @@ nav ul li a:hover{
     background-color: var(--secondary);
 
 }
-.hamburger-menu:hover div {
-
-
-  background-color: #56F03D;
-    
-}
 
 
 .home{
-    width: 100vw;
+  
     height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     flex-direction: column;
     background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('banner.jpg');
     background-position: center;
@@ -146,6 +142,70 @@ nav ul li a:hover{
     transition: 0.5s ease;
 }
 
+.cart{
+    color: #000;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.buy-page{
+
+   
+    z-index: 999;
+    background-color: #fff;
+    height: 100vh;
+    padding: 60px;
+    position: fixed;
+    top: 0px;
+    left: 1400px;
+}
+.buy-page.active{
+    left: 1100px;
+}
+
+.container-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.exit{
+    position: absolute;
+    top: 20px;
+    font-size: 22px;
+    left: 30px;
+    cursor: pointer;
+}
+.cart-price{
+    color: #000;
+    font-weight: 600;
+}
+
+.buy-page img{
+   
+    width: 50px;
+    height: 50px;
+}
+.removebtn{
+    cursor: pointer;
+}
+.total{
+    font-weight: 600;
+
+}
+.buy-page .buy{
+    padding: 10px 30px;
+    border: 1px #000 solid;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.buy-page .buy:hover{
+    background-color: #000;
+    transition: 0.5s ease;
+    color: #fff;
+
+}
 
 .heading{
    text-align: center;
@@ -174,6 +234,7 @@ nav ul li a:hover{
     background-color: var(--box-bg);
     display: flex;
     flex-direction: column;
+    
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 5px;
@@ -193,13 +254,17 @@ nav ul li a:hover{
     margin: 10px 0 0 0;
 }
 
+.orders-grid .box .price{
+    font-weight: 600;
+}
+
 .orders-grid .box h3{
     color: var(--box-text-color);
-    margin: 10px 0 ;
+    margin: 0px 0 10px 0 ;
 }
 
 
-.orders-grid .box a{
+.orders-grid .box .order{
 
     display: inline-block;
     padding: 10px 20px;
@@ -210,7 +275,7 @@ nav ul li a:hover{
 }
 
 
-.orders-grid .box a:hover{
+.orders-grid .box .order:hover{
     transition: 0.5s ease;
     background-color:var(--main);
     color: var(--primary);
@@ -225,9 +290,8 @@ nav ul li a:hover{
     background-color: var(--box-bg);
     padding: 20px;
     text-align: center;
-    margin: 0 auto;
-    width: 500px;
-    color: var(--box-text-color);
+    
+     color: var(--box-text-color);
 }
 .review .images img{
     width: 200px;
@@ -338,7 +402,7 @@ footer .icon,p{
         height: 100vh;
         width: 100%;
         background-color: var(--primary);
-       top: 0;
+       top: 0%;
        left: 100%;
 
     }
@@ -381,8 +445,8 @@ footer .icon,p{
        
         padding: 20px;
         text-align: center;
-        margin: 0 auto;
-        width: 350px;
+       
+       
         
     }
     .review .icon{
